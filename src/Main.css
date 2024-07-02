@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Utility Css*/
+@media screen and (max-width: 760px) {
+    .container, .container-sm {
+        min-width: 736px;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .container, .container-sm {
+        min-width: 690px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .container, .container-sm {
+        min-width: 100%;
+    }
+}
+
+/* Css of Nav.jsx */
+.main_nav{
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.height{
+    height: 45px;
+}
+
+.active{
+    font-weight: 500;
+    border-bottom: 3px solid black;
+    color: black;
+    width: auto;
+}
+
+.nav_link ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-size: 16px;
+    font-weight: 300;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    line-height: 43px;
+    color: #757575;
+}
+
+.logo_para{
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+
+.login_sigin_img{
+    width: 30px;
+    border-radius: 50%;
+}
+
+.welcome_para_mini{
+    font-size: 16px;
+    font-weight: 500;
+    color: #fafafa;
+}
+
+.welcome_para_large{
+    font-size: 30px;
+    color: #585858;
+    font-weight: 500;
+    margin-bottom: 100px;
+}
+
+p{
+    margin-bottom: 0px;
+}
+
+.hamburger{
+    display: none;
+}
+
+@media screen and (max-width: 694px) {
+    .nav_link{
+        display: none;
+    }
+
+    .login_sigin{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .logo_para{
+        font-size: 28px;
+    }
+
+    .icon{
+        font-size: 24px;
+        color: #222222;
+    }
+
+    .welcome{
+        margin-top: 50px !important;
+    }
+
+    .welcome_para_large{
+        margin-bottom: 90px;
+    }
+}
+
+
+/*Css of Frontend.jsx */
+.frontend_para{
+    margin: 40px 0px 20px 0px;
+}
+
+/*Css of Product.jsx */
+.my_card{
+    height: 280px;
+    width: 280px;
+    border-radius: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: 20px 0px 20px 10px;
+}
+
+.my_card_img{
+    width: 100%;
+    height: 70%;
+}
+
+.my_card_body{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.my_card_img img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.above_img{
+    position: relative;
+    bottom: 180px;
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    text-shadow: 1px 1px 1px #545454;
+    margin: 0px 10px 0px 10px;
+}
+
+.detail{
+    height: 100%;
+    display: flex;
+}
+
+.div1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.complition{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 140%;
+    border: 1px solid;
+    display: flex;
+    position: relative;
+    bottom: 28px;
+    right: 10px;
+    border: none;
+}
+
+.complition_para{
+    text-align: center;
+    font-size: 18px;
+    color: #808080;
+}
+
+.circle{
+    background-color: white;
+    border: 6px solid #e6e6e6;
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle i{
+    font-size: 16px;
+}
+
+.number{
+    font-size: 26px;
+    color: #222222;
+    font-weight: 500;
+}
+
+.detail_para{
+    font-size: 12px;
+    color: #808080;
+}
+
+
+/* Css of Chapter.jsx */
+.upper-bg-img img{
+    width: 100%;
+    height: 45vh;
+    position: absolute;
+    z-index: 0;
+}
+
+.img_content{
+    display: flex;
+}
+
+.back_to_explor{
+    position: relative;
+    width: 35%;
+    display: flex;
+    margin-top: 40px;
+    height: 20vh;
+}
+
+.welcome_para_large2{
+    font-size: 30px;
+    color: #fafafa;
+    font-weight: 500;
+}
+
+.bottom{
+    margin-bottom: 2px;
+    padding-right: 2px;
+}
+
+.center_para{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-end;
+    height: 25vh;
+    margin-top: 60px;
+}
+
+.side-box{
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 100%;
+}
+
+.box{
+    width: 380px;
+    padding: 20px 10px 0px 20px;
+    height: 120px;
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid #e6dede;
+}
+
+.txt-content{
+    width: 100%;
+}
+
+.box:first-child{
+    background-color: #222222;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.box:last-child{
+    border-radius: 0px 0px 20px 20px;
+}
+
+.intro-logo{
+    width: 1;
+    color: #fafafa;
+    font-size: 30px;
+}
+
+.heading{
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.heading3{
+    font-size: 20px;
+    color: #4a4a4a;
+    font-weight: 500;
+}
+
+.detail{
+    font-size: 14px;
+    color: #8c8c8c;
+    width: 100%;
+    height: 50%;
+}
+
+.below-chapter-content{
+    display: flex;
+    position: relative;
+}
+
+.main_para{
+    width: 100%;
+}
+
+.main-content{
+    margin: 90px 0px 50px 50px;
+}
+
+.heading2{
+    font-size: 30px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.para_container{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 300;
+    color: #8c8c8c;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box-3{
+    width: 22px;
+    height: 22px;
+    border: 3px solid rgb(219, 219, 219);
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+.logo{
+    width: 7%;
+}
